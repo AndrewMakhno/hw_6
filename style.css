@@ -1,0 +1,151 @@
+body,html{
+    height: 98%;
+    width:  100%;
+    margin: 0;
+}
+.welcomecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(163, 50, 144);
+    height: 100%;
+    margin: 10px;
+    border-radius: 15px;
+}
+.welcomecontainer > a{
+    color: white;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 15px;
+    transition: 0.2ms ease;
+    cursor: pointer;
+}
+.welcomecontainer > a:hover{
+    background-color: black;
+}
+
+.container { 
+    height: 100%;
+    display: grid; 
+    grid-template-columns:  repeat(3, 1fr);  
+    grid-template-rows: 26% 8% 52% 8%;
+    background-color: white; 
+    gap: 10px; 
+    grid-template-areas: 'header header header' 
+                         'nav nav nav' 
+                         'aside content content' 
+                         'footer footer footer'; 
+}
+.container > div { 
+   border-radius: 8px;
+}   
+#one { 
+  grid-area: header; 
+  background-color: rgb(163, 50, 144);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} 
+.oneimg{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+  
+
+  
+}
+#name1{
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: lightcyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 0;
+}
+.name2{
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: lightcyan;
+  display: flex;
+  justify-content: flex-end;
+  height: 10%;
+  margin-right: 30px;
+}
+#two { 
+  grid-area: nav; 
+  background-color: white;
+  display: grid;
+  grid-template-columns:  repeat(7,1fr);
+  place-items: center;
+}
+a,li{
+  text-decoration: none;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+}
+#three { 
+  grid-area: aside; 
+  background-color: rgb(131, 36, 68);
+}    
+#name2{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(189, 136, 184);
+}
+#text{
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+} 
+#four { 
+  grid-area: content; 
+  background-color: lightcoral;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+} 
+#butleft{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+}
+#butright{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+}
+.photo{
+  width: 256px;
+  height: 256px;
+  align-self: center;
+  justify-self: center;
+  border: 5px solid black;
+  overflow: hidden;
+}
+#polosa{
+    display: flex;
+    position: relative;
+    left: 0; 
+    right: 0;
+    transition: all ease 1s;
+}
+#five {
+  display: grid; 
+  grid-area: footer; 
+  background-color: lightpink;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  align-content: center;
+  justify-content: center;
+}    
